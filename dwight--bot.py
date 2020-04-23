@@ -10,7 +10,7 @@ def main():
     reddit=praw.Reddit(client_id='CGgcZSqSOD372A',
                        client_secret='_Bs55xvcMAoWdhSIzN0gWMhvwRw',
                        username='Dwight_Bot',
-                       password='@littlekidlover',
+                       password='', # password hidden for security reasons
                        user_agent='idkwhatisthis')
 
     subreddit = reddit.subreddit("DunderMifflin")

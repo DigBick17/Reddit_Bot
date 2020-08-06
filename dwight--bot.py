@@ -12,7 +12,7 @@ def main():
     reddit=praw.Reddit(client_id='DsbmM6rHRZ353g',
                        client_secret='Y0k60B7WjxXgzQbo4jXrgTXwBLo',
                        username='Dwight--Bot',
-                       password='', #password hidden for security reasons
+                       password='', #password hidden
                        user_agent='idkwhatisthis')
 
     subreddit = reddit.subreddit("DunderMifflin")
@@ -28,7 +28,7 @@ def process_submission(submission):
             time.sleep(60)
             randomfact=random.randint(0,44)
             reply=facts[randomfact]
-            submission.reply('So You could not handle my undivided attention. Here is a random Schrute Fact :\n\n'+
+            submission.reply('Here is a random Schrute Fact :\n\n'+
                           reply + '\n\nI am Dwight Bot, successor to COMPUTRON.')
             print("Replied to: {}".format(submission.title))
             submission.save()
